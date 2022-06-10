@@ -1,0 +1,62 @@
+.modal-heading {
+  background-color: #054752;
+  color: aliceblue;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 25px;
+  height: auto;
+}
+.personal-details-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  width: 220px;
+  height: 35px;
+  border: none;
+  border-bottom: 2px solid #054752;
+}
+.age {
+  width: 85px;
+  border: none;
+  border-bottom: 2px solid #054752;
+}
+.gender {
+  width: 90px;
+  border: none;
+  border-bottom: 2px solid #054752;
+}
+.gender-icon {
+  font-size: 18px;
+  color: black;
+}
+.email {
+  border: none;
+  border-bottom: 2px solid #054752;
+}
+.phone-number {
+  border: none;
+  border-bottom: 2px solid #054752;
+}
+.save-button,
+.close-button {
+  border-radius: 1%;
+  outline: none;
+  border: none;
+}
+
+.close-button:hover {
+  background-color: #e04949;
+}
+.save-button:hover {
+  background-color: #034b03;
+}

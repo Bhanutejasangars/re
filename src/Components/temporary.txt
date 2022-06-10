@@ -1,0 +1,37 @@
+  const {
+    value: inputEmail,
+    isValid: inputEmailIsValid,
+    hasError: inputEmailHasError,
+    inputValueChangeHandler: inputEmailHandler,
+    inputValueBlurHandler: emailBlurHandler,
+    reset: resetInputEmail,
+  } = useValidate((data) => {
+    return data.includes("@");
+  });
+
+  const {
+    value: inputPassword,
+    isValid: passwordIsValid,
+    hasError: passwordHasError,
+    inputValueChangeHandler: inputPasswordHandler,
+    inputValueBlurHandler: passwordBlurHandler,
+    reset: resetInputPassword,
+  } = useValidate((value) => {
+    return value.trim() !== "";
+  });
+
+  let formValidity = false;
+  if (inputEmailIsValid && passwordIsValid) {
+    formValidity = true;
+  }
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (formValidity) {
+      console.log(inputPassword, inputEmail);
+      resetInputEmail();
+      resetInputPassword();
+    } else if (!formValidity) {
+      alert("wrong inputs");
+    }
+  };

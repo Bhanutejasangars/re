@@ -1,0 +1,14 @@
+.navigationLinks:link,
+.navigationLinks:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.navigationLinks:hover,
+.navigationLinks:active {
+  color: #c60001;
+}
+.NavBox {
+  background-color: #054752;
+}
